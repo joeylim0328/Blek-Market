@@ -1,4 +1,9 @@
-//this program is created by Lim Zhou Yi, Chia Jia Huey, Gan Yen Wen and Tan Yi Fan
+/*
+This is a project for PPS0335-Problem Solving and Programming assignment.
+Members:
+Joey Lim, J.H.,Chia, Y.W.,Gan, Y.F.,Tan
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -234,6 +239,7 @@ case 1:
             switch (choice){
 
             case 1:
+            x.viewall_product();//Need to create a view all function so that cashier/admin can see when adding items to cart
             u.search_product();
             u.count_product();
             break;
