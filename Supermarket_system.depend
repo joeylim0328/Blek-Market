@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1537963898 source:c:\users\user\desktop\supermarket_system\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+
+1538126128 source:c:\users\user\documents\assignment\18-19(1)\computer programming assignment\supermarket_system\supermarket_system\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+
+1538318583 source:c:\users\user\documents\assignment\18-19(1)\computer programming assignment\supermarket_system\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+
+1538318584 source:d:\documents\education\assignment\18-19(1)\computer programming assignment\supermarket_system\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+
