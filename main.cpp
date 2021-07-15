@@ -30,14 +30,23 @@ class cashier{
         }
 
         void search_product(){
-            ifstream details;
+            ifstream details,view;
             ofstream shoppinglist;
-            string product_name,line,product_id,temp;
+            string product_name,line,product_id,temp,line2;
             float price;
             char choice;
             int amount;
             details.open("items.txt", ios::in);
             shoppinglist.open("shoppinglist.txt", ios::out|ios::trunc);
+            view.open("items.txt", ios::in);
+
+            //view the items that exist in the item list
+            if(view.is_open()){
+                while(getline(view,line)){//to view every line
+                    cout<<line<<endl;
+                } }
+             else{
+                cout << "Unable to view." << endl;}
 
             do{
                 cout << "Enter the product id : ";
@@ -70,6 +79,7 @@ class cashier{
             system("pause");
             system("cls");
             details.close();
+            view.close();
         }
 
         void count_product(){
@@ -239,7 +249,6 @@ case 1:
             switch (choice){
 
             case 1:
-            x.viewall_product();//Need to create a view all function so that cashier/admin can see when adding items to cart
             u.search_product();
             u.count_product();
             break;
