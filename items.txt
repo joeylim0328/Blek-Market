@@ -1,9 +1,7 @@
 0000	 NAME 	0
 1002	 Orange  2.01
 1003	 Grape  4.5
-1004	 Watermelon  5
 1005	 Carrot  2
-1006	 BakChoi  4.59
 1007	 Cabbage  3.21
 1008	 Tomatoes  5.67
 1009	 Egg  4.2

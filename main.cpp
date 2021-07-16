@@ -51,7 +51,9 @@ class cashier{
             do{
                 cout << "Enter the product id : ";
                 cin >> product_id;
+
                 if( (details.is_open()) && (shoppinglist.is_open()) ){
+
                     while(getline(details,temp)){
                         details>>temp;
                         line.append(temp);
@@ -70,6 +72,7 @@ class cashier{
                             }
                             break;
                         }
+
                     }
                 }
                 else{
@@ -156,12 +159,23 @@ class admin : public cashier{
         };
 
         void delete_product(){
-            string product_id,product_name,line;
+            string product_id,product_name,line,line2;
             float price;
-            ifstream clean;//original file  open for reading
+            ifstream clean,view;//original file  open for reading
             clean.open("items.txt", ios::in);
             ofstream temp;//temporary file to store original content open for writing only
             temp.open("temp.txt", ios::out);
+
+            view.open("items.txt", ios::in);
+
+            //view the items that exist in the item list
+            if(view.is_open()){
+                while(getline(view,line2)){//to view every line
+                    cout<<line2<<endl;
+                } }
+             else{
+                cout << "Unable to view." << endl;}
+
             cout << "Enter the product id which you want to delete: ";
             cin >> product_id;
             while(getline(clean,line)){ //loop to read every line in items.txt from clean
@@ -174,6 +188,7 @@ class admin : public cashier{
             cout << product_id << " is deleted." << endl;
             temp.close();
             clean.close();
+            view.close();
             remove("items.txt");
             rename("temp.txt","items.txt");
             system("pause");
