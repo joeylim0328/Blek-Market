@@ -1,5 +1,5 @@
 /*
-This is a project for PPS0335-Problem Solving and Programming assignment.
+This is a project for TCP 1121-Computer Programming assignment.
 Members:
 Joey Lim, J.H.,Chia, Y.W.,Gan, Y.F.,Tan
 */
