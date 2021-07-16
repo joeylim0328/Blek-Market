@@ -197,11 +197,10 @@ void showMenu_cashier(){
         cout << "Welcome, dear Admin. "<<endl;
         cout << "1. Add product "<< endl;
         cout << "2. View all product "<< endl;
-        cout << "3. Search  product "<< endl;
-        cout << "4. Edit  product "<< endl;
-        cout << "5. Calculate price of product "<< endl;
-        cout << "6. Delete product "<< endl;
-        cout << "7. Exit "<< endl;
+        cout << "3. Edit  product "<< endl;
+        cout << "4. Calculate price of product "<< endl;
+        cout << "5. Delete product "<< endl;
+        cout << "6. Exit "<< endl;
 
 
     };
@@ -283,29 +282,25 @@ case 2:
                     break;
 
                     case 3:
-                    u.search_product();
-                    break;
-
-                    case 4:
                     x.edit_product();
                     break;
 
-                    case 5:
+                    case 4:
                     u.search_product();
                     u.count_product();
                     break;
 
-                    case 6:
+                    case 5:
                     x.delete_product();
                     break;
 
-                    case 7:
+                    case 6:
                     break;
 
                     default:
                     cout << "Invalid input" << endl;
                         }
-                    }while(choice!=7);
+                    }while(choice!=6);
                 }
                 else{
                 cout<< "Invalid password. Please leave this page. "<<endl;

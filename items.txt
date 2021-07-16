@@ -7,6 +7,5 @@
 1007	 Cabbage  3.21
 1008	 Tomatoes  5.67
 1009	 Egg  4.2
-2001	 Fish  8.7
 2002	 Scallop  30
 2003	 Fish  4
