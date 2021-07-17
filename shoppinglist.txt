@@ -1,2 +1,7 @@
-Cabbage 3.21 45
-Fish 4 9
+Carrot 2 0
+Cabbage 3.21 0
+Tomatoes 5.67 0
+Egg 4.2 0
+Scallop 30 0
+Fish 4 0
+Fish 4 0
